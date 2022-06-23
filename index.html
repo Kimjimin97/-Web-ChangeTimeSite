@@ -17,13 +17,46 @@
     const root = document.getElementById("root");
 
     function App() {
-      const [counter, modifier] = React.useState(0);
-      const onClick = () => {
-        modifier();
+      const [inputTime, setTime] = React.useState(0);
+      const [flag, changeFlag] = React.useState(false);
+      const onChange = (event) => {
+        setTime(event.target.value);
       };
+      const reset = () => {
+        setTime(0);
+      };
+      const flip = () => {
+        changeFlag((current) => !current);
+        reset();
+      };
+
       return (
         <div>
-          <h3>Total clicks: {counter} </h3> <button>Click me</button>
+          <h1 className="Hi">"환산하고 싶은 시간을 입력하세요"</h1>
+          <div>
+            <label htmlFor="minutes">Minutes</label>
+            <input
+              value={flag ? inputTime * 60 : inputTime}
+              id="minutes"
+              placeholder="Minutes"
+              type="number"
+              onChange={onChange}
+              disabled={flag}
+            />
+          </div>
+          <div>
+            <label htmlFor="hours">Hours</label>
+            <input
+              value={flag ? inputTime : Math.round(inputTime / 60)}
+              id="hours"
+              placeholder="Hours"
+              type="number"
+              onChange={onChange}
+              disabled={!flag}
+            />
+          </div>
+          <button onClick={reset}>Reset</button>
+          <button onClick={flip}>Flip</button>
         </div>
       );
     }
