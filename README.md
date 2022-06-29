@@ -4,9 +4,9 @@
 
 시간을 단위로 바꿔주는 사이트를 만들었다.
 
-<center>
+<p align="center">
 <img width="419" alt="스크린샷 2022-06-29 오후 3 34 17" src="https://user-images.githubusercontent.com/67817682/176367814-4f9f603e-b511-43e2-9879-d2573f827ca3.png">
-  
+  </p>
 </center>
 
 ### ⏱ 구현 기능 ⏱
@@ -45,18 +45,17 @@ React에 *State*를 활용해서 변수가 동적으로 바뀌도록 설정
 시간 뿐만 아니라 더 많은 단위에 대해서도 환산이 가능하도록 시도하고 싶었다.
 
 
-<center>
+<p align="center">
   <img width="419" style="display: block" alt="스크린샷 2022-06-29 오후 6 06 43" src="https://user-images.githubusercontent.com/67817682/176399425-476b9d3c-9c2f-4f0b-ace4-c4eb561d7301.png">
-
-</center>
+  </p>
 ---
-<center>
+<p align="center">
 <img width="419" alt="스크린샷 2022-06-29 오후 6 06 47" src="https://user-images.githubusercontent.com/67817682/176399588-f9aa25c7-2a14-40f7-9301-19f8ba2930f9.png">
-</center>
+  </p>
 ---
-<center>
+<p align="center">
 <img width="419" alt="스크린샷 2022-06-29 오후 6 17 50" src="https://user-images.githubusercontent.com/67817682/176400621-c9c67a97-a8d0-4c64-9d36-fbc7c74e6b6b.png">
-</center>
+  </p>
 
 ### ❗️ 추가 구현 기능 ❗️
 
@@ -104,13 +103,13 @@ html option 태그를 사용했다.
 첫 화면에 바로 "시 분 바꿔줘"로 메뉴가 설정되어 있지만, 화면이 비어있다.
 
 ⛔️ 변경 이전 화면
-<center>
+<p align="center">
 <img width="419" style="display: block; margin: auto;" alt="스크린샷 2022-06-29 오후 6 38 34" src="https://user-images.githubusercontent.com/67817682/176405014-f30ebba0-efb6-4be5-a3b0-359871425a53.png">
-</center>
+  </p>
 ✅ 변경 이후 화면
-<center>
+<p align="center">
 <img width="419" alt="스크린샷 2022-06-29 오후 6 46 13" src="https://user-images.githubusercontent.com/67817682/176406606-da2d6350-d1a7-4a0e-815e-46f5bd39b6c2.png">
-</center>
+  </p>
 ### 🐛 버그 🐛
 
 하나의 옵션(option)을 추가해서 새로운 value 값을 선택했지만, re-render 이전이기 때문에
