@@ -48,11 +48,15 @@ React에 *State*를 활용해서 변수가 동적으로 바뀌도록 설정
 <p align="center">
   <img width="419" style="display: block" alt="스크린샷 2022-06-29 오후 6 06 43" src="https://user-images.githubusercontent.com/67817682/176399425-476b9d3c-9c2f-4f0b-ace4-c4eb561d7301.png">
   </p>
+  
 ---
+
 <p align="center">
 <img width="419" alt="스크린샷 2022-06-29 오후 6 06 47" src="https://user-images.githubusercontent.com/67817682/176399588-f9aa25c7-2a14-40f7-9301-19f8ba2930f9.png">
   </p>
+  
 ---
+
 <p align="center">
 <img width="419" alt="스크린샷 2022-06-29 오후 6 17 50" src="https://user-images.githubusercontent.com/67817682/176400621-c9c67a97-a8d0-4c64-9d36-fbc7c74e6b6b.png">
   </p>
