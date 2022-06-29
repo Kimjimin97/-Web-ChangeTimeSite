@@ -98,7 +98,7 @@ html option 태그를 사용했다.
 
 ⛔️ 변경 이전 화면
 
-<img width="419" style="display: block; margin: 0 auto;" alt="스크린샷 2022-06-29 오후 6 38 34" src="https://user-images.githubusercontent.com/67817682/176405014-f30ebba0-efb6-4be5-a3b0-359871425a53.png">
+<img width="419" style="display: block; margin: auto;" alt="스크린샷 2022-06-29 오후 6 38 34" src="https://user-images.githubusercontent.com/67817682/176405014-f30ebba0-efb6-4be5-a3b0-359871425a53.png">
 
 ✅ 변경 이후 화면
 
@@ -111,4 +111,4 @@ html option 태그를 사용했다.
 
 > menuId의 초기값으로 초기 option의 value를 설정하여 실행을 가능하도록 했다.
 
-menuId의 실행 경로를 되짚어 봤고, menuId가 시작하는 시초가 어디인지 살펴봤다. 등잔 밑이 어둡다고 초기값은 생각하지 못하고 전혀 찾지 못했지만, 열번 이상의 확인 이후 **_초기값_**이라는 해결책을 찾을 수 있었다.
+menuId의 실행 경로를 되짚어 봤고, menuId가 시작하는 시초가 어디인지 살펴봤다. 등잔 밑이 어둡다고 초기값은 생각하지 못하고 전혀 찾지 못했지만, 열번 이상의 확인 이후 ***초기값***이라는 해결책을 찾을 수 있었다.
