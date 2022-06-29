@@ -40,7 +40,7 @@ React에 *State*를 활용해서 변수가 동적으로 바뀌도록 설정
 
 시간 뿐만 아니라 더 많은 단위에 대해서도 환산이 가능하도록 시도하고 싶었다.
 
-<img width="419" alt="스크린샷 2022-06-29 오후 6 06 43" src="https://user-images.githubusercontent.com/67817682/176399425-476b9d3c-9c2f-4f0b-ace4-c4eb561d7301.png">
+<img width="419" style="display: block" alt="스크린샷 2022-06-29 오후 6 06 43" src="https://user-images.githubusercontent.com/67817682/176399425-476b9d3c-9c2f-4f0b-ace4-c4eb561d7301.png">
 
 ---
 
@@ -98,7 +98,7 @@ html option 태그를 사용했다.
 
 ⛔️ 변경 이전 화면
 
-<img width="419"  alt="스크린샷 2022-06-29 오후 6 38 34" src="https://user-images.githubusercontent.com/67817682/176405014-f30ebba0-efb6-4be5-a3b0-359871425a53.png">
+<img width="419" style="display: block; margin: 0 auto; width:100px; height:100px;" alt="스크린샷 2022-06-29 오후 6 38 34" src="https://user-images.githubusercontent.com/67817682/176405014-f30ebba0-efb6-4be5-a3b0-359871425a53.png">
 
 ✅ 변경 이후 화면
 
@@ -111,4 +111,4 @@ html option 태그를 사용했다.
 
 > menuId의 초기값으로 초기 option의 value를 설정하여 실행을 가능하도록 했다.
 
-menuId의 실행 경로를 되짚어 봤고, menuId가 시작하는 시초가 어디인지 살펴봤다. 등잔 밑이 어둡다고 초기값은 생각하지 못하고 전혀 찾지 못했지만, 열번의 확인 이후 **_초기값_**이라는 해결책을 찾을 수 있었다.
+menuId의 실행 경로를 되짚어 봤고, menuId가 시작하는 시초가 어디인지 살펴봤다. 등잔 밑이 어둡다고 초기값은 생각하지 못하고 전혀 찾지 못했지만, 열번 이상의 확인 이후 **_초기값_**이라는 해결책을 찾을 수 있었다.
