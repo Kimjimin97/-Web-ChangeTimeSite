@@ -98,7 +98,7 @@ html option 태그를 사용했다.
 
 ⛔️ 변경 이전 화면
 
-<img width="419" style="display: block; margin: 0 auto; width:100px; height:100px;" alt="스크린샷 2022-06-29 오후 6 38 34" src="https://user-images.githubusercontent.com/67817682/176405014-f30ebba0-efb6-4be5-a3b0-359871425a53.png">
+<img width="419" style="display: block; margin: 0 auto;" alt="스크린샷 2022-06-29 오후 6 38 34" src="https://user-images.githubusercontent.com/67817682/176405014-f30ebba0-efb6-4be5-a3b0-359871425a53.png">
 
 ✅ 변경 이후 화면
 
