@@ -150,13 +150,14 @@
     }
 
     function App() {
-      const [idMenu, setMenu] = React.useState(0);
+      const [idMenu, setMenu] = React.useState(-1);
       const changeMenu = (event) => {
         setMenu(event.target.value);
       };
       return (
         <div>
           <select value={idMenu} onChange={changeMenu}>
+            <option value="-1">환산하고 싶은 단위를 선택해 주세요!</option>
             <option value="0">시 분 바꿔줘</option>
             <option value="1">리터 미리리터 바꿔줘</option>
             <option value="2">미터 킬로미터 바꿔줘</option>

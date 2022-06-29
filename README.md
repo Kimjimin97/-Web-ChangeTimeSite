@@ -74,6 +74,7 @@ html option 태그를 사용했다.
 <div>
   <select value="{idMenu}" onChange="{changeMenu}">
     <option value="0">시 분 바꿔줘</option>
+    <option value="0">시 분 바꿔줘</option>
     <option value="1">리터 미리리터 바꿔줘</option>
     <option value="2">미터 킬로미터 바꿔줘</option>
   </select>
@@ -82,4 +83,27 @@ html option 태그를 사용했다.
 </div>
 ```
 
-option을 클릭하면 value값이 바뀔 것이라 예상하고 onClick 어트리뷰트를 사용했지만, 셀렉트박스(select) 변경 이벤트 처리는 onChange를 사용한다.
+> option을 클릭하면 value값이 바뀔 것이라 예상하고 onClick 어트리뷰트를 사용했지만, 셀렉트박스(select) 변경 이벤트 처리는 onChange를 사용한다.
+
+---
+
+## 3️⃣ 세번째 구현 시도
+
+첫 화면에 바로 "시 분 바꿔줘"로 메뉴가 설정되어 있지만, 화면이 비어있다.
+
+⛔️ 변경 이전 화면
+
+<img width="419" alt="스크린샷 2022-06-29 오후 6 38 34" src="https://user-images.githubusercontent.com/67817682/176405014-f30ebba0-efb6-4be5-a3b0-359871425a53.png">
+
+✅ 변경 이후 화면
+
+<img width="419" alt="스크린샷 2022-06-29 오후 6 46 13" src="https://user-images.githubusercontent.com/67817682/176406606-da2d6350-d1a7-4a0e-815e-46f5bd39b6c2.png">
+
+## 🐛 버그 🐛
+
+하나의 옵션(option)을 추가해서 새로운 value 값을 선택했지만, re-render 이전이기 때문에
+옵션(option)이 변경되지 않았다.
+
+> menuId의 초기값으로 초기 option의 value를 설정하여 실행을 가능하도록 했다.
+
+menuId의 실행 경로를 되짚어 봤고, menuId가 시작하는 시초가 어디인지 살펴봤다. 등잔 밑이 어둡다고 초기값은 생각하지 못하고 전혀 찾지 못했지만, 열번의 확인 이후 **_초기값_**이라는 해결책을 찾을 수 있었다.
