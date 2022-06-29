@@ -2,4 +2,4 @@
 
 --
 
-<img width = "80%" scr="https://user-images.githubusercontent.com/67817682/176365790-70440a24-37a8-43f0-ba4d-4435692a96d7.gif"/>
+<img scr="https://user-images.githubusercontent.com/67817682/176365790-70440a24-37a8-43f0-ba4d-4435692a96d7.gif"/>
