@@ -1,6 +1,6 @@
 # 단위를 환산해 주는 사이트
 
-<h2>1️⃣ 첫번째 시도 구현</h2>
+## 1️⃣ 첫번째 시도 구현
 
 시간을 단위로 바꿔주는 사이트를 만들었다.
 <img width="419" alt="스크린샷 2022-06-29 오후 3 34 17" src="https://user-images.githubusercontent.com/67817682/176367814-4f9f603e-b511-43e2-9879-d2573f827ca3.png">
@@ -42,7 +42,12 @@ React에 *State*를 활용해서 변수가 동적으로 바뀌도록 설정
 
 <img width="419" alt="스크린샷 2022-06-29 오후 6 06 43" src="https://user-images.githubusercontent.com/67817682/176399425-476b9d3c-9c2f-4f0b-ace4-c4eb561d7301.png">
 
+---
+
 <img width="419" alt="스크린샷 2022-06-29 오후 6 06 47" src="https://user-images.githubusercontent.com/67817682/176399588-f9aa25c7-2a14-40f7-9301-19f8ba2930f9.png">
+
+---
+
 
 <img width="419" alt="스크린샷 2022-06-29 오후 6 17 50" src="https://user-images.githubusercontent.com/67817682/176400621-c9c67a97-a8d0-4c64-9d36-fbc7c74e6b6b.png">
 
@@ -93,7 +98,7 @@ html option 태그를 사용했다.
 
 ⛔️ 변경 이전 화면
 
-<img width="419" alt="스크린샷 2022-06-29 오후 6 38 34" src="https://user-images.githubusercontent.com/67817682/176405014-f30ebba0-efb6-4be5-a3b0-359871425a53.png">
+<img width="419"  alt="스크린샷 2022-06-29 오후 6 38 34" src="https://user-images.githubusercontent.com/67817682/176405014-f30ebba0-efb6-4be5-a3b0-359871425a53.png">
 
 ✅ 변경 이후 화면
 
