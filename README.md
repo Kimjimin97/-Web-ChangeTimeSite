@@ -1,5 +1,8 @@
-# 시간을 환산해 주는 사이트
+# 단위를 환산해 주는 사이트
 
+<h2>1️⃣ 첫번째 시도 구현</h2>
+
+시간을 단위로 바꿔주는 사이트를 만들었다.
 <img width="419" alt="스크린샷 2022-06-29 오후 3 34 17" src="https://user-images.githubusercontent.com/67817682/176367814-4f9f603e-b511-43e2-9879-d2573f827ca3.png">
 
 ## ⏱ 구현 기능 ⏱
@@ -29,9 +32,54 @@ React에 *State*를 활용해서 변수가 동적으로 바뀌도록 설정
 - flip 함수
   - **_"분으로"_** , **_"시간으로"_** 버튼을 눌르면 flag state data 값이 False -> True, True -> False로 변경된다.
 
+</details>
+
+---
+
+## 2️⃣ 두번째 구현 시도
+
+시간 뿐만 아니라 더 많은 단위에 대해서도 환산이 가능하도록 시도하고 싶었다.
+
+<img width="419" alt="스크린샷 2022-06-29 오후 6 06 43" src="https://user-images.githubusercontent.com/67817682/176399425-476b9d3c-9c2f-4f0b-ace4-c4eb561d7301.png">
+
+<img width="419" alt="스크린샷 2022-06-29 오후 6 06 47" src="https://user-images.githubusercontent.com/67817682/176399588-f9aa25c7-2a14-40f7-9301-19f8ba2930f9.png">
+
+<img width="419" alt="스크린샷 2022-06-29 오후 6 17 50" src="https://user-images.githubusercontent.com/67817682/176400621-c9c67a97-a8d0-4c64-9d36-fbc7c74e6b6b.png">
+
+## ❗️ 추가 구현 기능 ❗️
+
+- 셀렉트박스(select) 변경 이벤트 처리
+  - 메뉴를 만들어 원하는 단위 환산 기능을 사용도록함
+  - 거리 단위 환산 기능
+  - 부피 단위 환산 기능
+
+## 📜 메뉴 기능 구현 📜
+
+html option 태그를 사용했다.
+이때 주의할 점은 option은 꼭 select 태그 안에 들어와야 한다.
+
 ```html
-const [inputTime, setTime] = React.useState(0); const [flag, changeFlag] =
-React.useState(false); const onChange = (event) => {
-setTime(event.target.value); }; const reset = () => { setTime(0); }; const flip
-= () => { changeFlag((current) => !current); reset(); };
+<select onClick="{changeMenu}" name="" id="">
+  <option value="0">시 분 바꿔줘</option>
+  <option value="1">리터 미리리터 바꿔줘</option>
+  <option value="2">미터 킬로미터 바꿔줘</option>
+</select>
 ```
+
+## 🐛 버그 🐛
+
+- 메뉴를 바꾼 후에 바로 화면이 바뀌는 것이 아니라 메뉴 버튼은 한 번 더 눌러야 버튼이 바뀐다.
+
+```html
+<div>
+  <select value="{idMenu}" onChange="{changeMenu}">
+    <option value="0">시 분 바꿔줘</option>
+    <option value="1">리터 미리리터 바꿔줘</option>
+    <option value="2">미터 킬로미터 바꿔줘</option>
+  </select>
+  {console.log(idMenu)} {idMenu === "0" ? <time /> : null} {idMenu === "1" ?
+  <Liter /> : null}
+</div>
+```
+
+option을 클릭하면 value값이 바뀔 것이라 예상하고 onClick 어트리뷰트를 사용했지만, 셀렉트박스(select) 변경 이벤트 처리는 onChange를 사용한다.

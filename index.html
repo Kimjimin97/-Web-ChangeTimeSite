@@ -15,8 +15,7 @@
 
   <script type="text/babel">
     const root = document.getElementById("root");
-
-    function App() {
+    function Time() {
       const [inputTime, setTime] = React.useState(0);
       const [flag, changeFlag] = React.useState(false);
       const onChange = (event) => {
@@ -32,7 +31,7 @@
 
       return (
         <div>
-          <h1 className="Hi">"환산하고 싶은 시간을 입력하세요"</h1>
+          <h1 className="Hi">"환산하고 싶은 시간을 입력하세요!"</h1>
           <div>
             <label htmlFor="minutes">Minutes</label>
             <input
@@ -57,6 +56,114 @@
           </div>
           <button onClick={reset}>Reset</button>
           <button onClick={flip}>{flag ? "시간으로" : "분으로"}</button>
+        </div>
+      );
+    }
+    function Liter() {
+      const [inputLiter, setLiter] = React.useState(0);
+      const [flag, changeFlag] = React.useState(false);
+      const onChange = (event) => {
+        setLiter(event.target.value);
+      };
+      const reset = () => {
+        setLiter(0);
+      };
+      const flip = () => {
+        changeFlag((current) => !current);
+        reset();
+      };
+
+      return (
+        <div>
+          <h1 className="Hi">"환산하고 싶은 액체 부피를 입력하세요!"</h1>
+          <div>
+            <label htmlFor="L">L</label>
+            <input
+              value={flag ? inputLiter * 0.001 : inputLiter}
+              id="liters"
+              placeholder="L"
+              type="number"
+              onChange={onChange}
+              disabled={flag}
+            />
+          </div>
+          <div>
+            <label htmlFor="mL">mL</label>
+            <input
+              value={flag ? inputLiter : inputLiter * 1000}
+              id="hours"
+              placeholder="mL"
+              type="number"
+              onChange={onChange}
+              disabled={!flag}
+            />
+          </div>
+          <button onClick={reset}>Reset</button>
+          <button onClick={flip}>{flag ? "L" : "mL"}</button>
+        </div>
+      );
+    }
+
+    function Meter() {
+      const [inputMeter, setMeter] = React.useState(0);
+      const [flag, changeFlag] = React.useState(false);
+      const onChange = (event) => {
+        setLiter(event.target.value);
+      };
+      const reset = () => {
+        setMeter(0);
+      };
+      const flip = () => {
+        changeFlag((current) => !current);
+        reset();
+      };
+
+      return (
+        <div>
+          <h1 className="Hi">"환산하고 싶은 길이를 입력하세요!"</h1>
+          <div>
+            <label htmlFor="meter">m(미터)</label>
+            <input
+              value={flag ? inputMeter * 0.001 : inputMeter}
+              id="meters"
+              placeholder="m(미터)"
+              type="number"
+              onChange={onChange}
+              disabled={flag}
+            />
+          </div>
+          <div>
+            <label htmlFor="km(킬로미터)">km(킬로미터)</label>
+            <input
+              value={flag ? inputMeter : inputMeter * 1000}
+              id="hours"
+              placeholder="mL"
+              type="number"
+              onChange={onChange}
+              disabled={!flag}
+            />
+          </div>
+          <button onClick={reset}>Reset</button>
+          <button onClick={flip}>{flag ? "L" : "mL"}</button>
+        </div>
+      );
+    }
+
+    function App() {
+      const [idMenu, setMenu] = React.useState(0);
+      const changeMenu = (event) => {
+        setMenu(event.target.value);
+      };
+      return (
+        <div>
+          <select value={idMenu} onChange={changeMenu}>
+            <option value="0">시 분 바꿔줘</option>
+            <option value="1">리터 미리리터 바꿔줘</option>
+            <option value="2">미터 킬로미터 바꿔줘</option>
+          </select>
+          {console.log(idMenu)}
+          {idMenu === "0" ? <Time /> : null}
+          {idMenu === "1" ? <Liter /> : null}
         </div>
       );
     }
