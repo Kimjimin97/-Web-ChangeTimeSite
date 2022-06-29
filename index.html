@@ -56,7 +56,7 @@
             />
           </div>
           <button onClick={reset}>Reset</button>
-          <button onClick={flip}>Flip</button>
+          <button onClick={flip}>{flag ? "시간으로" : "분으로"}</button>
         </div>
       );
     }
